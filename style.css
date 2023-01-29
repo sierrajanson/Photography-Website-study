@@ -1,0 +1,319 @@
+/* WEB STYLING --------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Modak&family=Permanent+Marker&family=Sigmar+One&display=swap');
+
+html{ /* putting this in * makes the entire About Page disappear */
+  overflow-x: hidden;}
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #DCD4CD;
+}
+
+/* NAVIGATION STYLING --------------------------------------------- */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.worksNav a{
+  color:#DCD4CD;
+}
+
+nav{
+  list-style:none;
+}
+
+nav li{
+  margin-top: 20px;
+  display: inline-block;
+}
+
+li, a{
+  text-decoration: none;
+  font-family: "Sigmar One";
+  color: #191819;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+li:nth-child(3){
+  margin-right: 80px;
+}
+
+/* HOME PAGE STYLING -----------------------------------------------------------------*/
+#container{
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+
+#image{
+  position: relative;
+  top: 8%;
+  width: 500px;
+  left: 15%;
+}
+
+#name:hover{
+  text-shadow: white 10px 10px;
+}
+
+#name{
+  line-height: 0.8em;
+  transform: rotate(-15deg);
+  position: absolute;
+  font-family: "permanent marker";
+  top: 19%;
+  color: #191819;
+  font-size: 160px;
+  width: 100%;
+  left: 33%;
+  transition: text-shadow 0.2s;
+}
+
+@keyframes pinwheel{
+  0%{transform: rotate(0deg);}
+  25%{transform: rotate(90deg);}
+  50%{transform: rotate(180deg);}
+  75%{transform: rotate(270deg);}
+  100%{transform: rotate(360deg);}
+}
+
+/* CONTACT AREA STYLING ---------------------------------*/
+#job{
+  position: absolute;
+  font-family: "sigmar one";
+  left: 68%;
+  top: 66%;
+  font-size: 23px;
+}
+
+#input {
+  border: 4px white solid;
+  width: 25%;
+  padding: 30px;
+  padding-bottom: 80px;
+  position: relative;
+  left: 0%;
+  top: 19%;
+  margin: auto;
+}
+
+#contact p{
+  font-family:"permanent marker";
+  text-align: center;
+  letter-spacing: 0.6em;
+  font-size: 20px;
+  color: white;
+}
+
+#btn{
+  position: absolute;
+  margin-left: 25%;
+  margin-top:0%;
+  padding: 10px 15px;
+  font-family: "sigmar one";
+  font-size: 25px;
+  font-weight: 70%;
+  background-color: #a7a1a0;
+  color: white;
+  border-radius: 30%;
+}
+
+#contact{
+  width: 100%;
+  background-color: #191819;
+  height: 600px;
+  position: relative;
+}
+
+#contact label{
+  color: white;
+  font-size: 20px;
+  font-family:"sigmar one";
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+#me{
+  padding-top: 50px;
+  color: white;
+  font-size: 80px;
+  font-family:"sigmar one";
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+/* WORKS STYLING ------------------------------------------------------------------ */
+
+.worksBod{
+  background-color: #191819;
+  position: relative;
+}
+
+#page{
+  border-radius: 1%;
+  background-color: hsl(30, 20%, 85%);
+  position: relative;
+  margin-bottom: 20px;
+  width: 70%;
+  left: 15%;
+  top: 50px;
+  height: 1300px;
+  /* GRID LAYOUT ----------------------*/
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#page img{
+  border-radius: 1%;
+  box-shadow: 3px 3px 5px hsl(30, 20%, 10%);
+  width: 93%;
+  margin: 10% 6%;
+  margin-bottom: 10%;
+}
+
+/* ABOUT PAGE STYLING ----------------------------------------------------------------*/
+#leafPage{
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+
+#leafSpecial{
+  box-shadow: none;
+  background-color: none;
+}
+
+#leafSpecial p{
+  color: #191819;
+}
+
+.leafCon /*h2, blockquote, p*/{
+  position: absolute;
+  box-shadow: 5px 5px 0 0 #191819;
+  left: 35%;
+  top: 200px;
+  padding: 40px;
+  height: 450px;
+  width: 600px;
+  background-color: #DCD4CD;
+}
+
+.leafCon p{
+  margin-top: 18px;
+  font-family: cursive;
+  color: #1d1b1d;
+  text-align: left;
+}
+
+.leafCon h2{
+  font-family: "permanent marker";
+  text-align: center;
+  text-shadow: #8e805f 2px 2px;
+  font-size: 40px;
+  letter-spacing: 0.15em;
+}
+
+#leaf{
+  position: absolute;
+  width: 30%;
+  left: 10%;
+  top: 5%;
+}
+
+/* FOOTER STYLING ---------------------------------------------*/
+.foot a{
+  color: white;
+  font-size: 15px;
+  margin-top: 0px;
+}
+
+.foot{
+  padding-top: 15px;
+  text-align: center;
+  background-color: #121212;
+  height: 120px;
+}
+
+#foot1{
+  padding-top: 50px;
+}
+
+/* DYNAMIC WEBSITE STYING */ 
+@media(max-width: 2000px){
+  #page{
+    height: 1200px;
+  }
+}
+
+@media(max-width: 1700px){
+  #page{
+    height: 1100px;
+  }
+}
+
+/* DYNAMIC WEBSITE SIZING --------------------- */
+@media(max-width: 2000px){
+  #page{
+    height: 1300px;
+  }
+}
+@media(max-width:1500px){
+  #name{
+    font-size: 70px;
+    top: 30%;
+    left: 50%;
+  }
+  #leaf{
+    width: 50%;
+  }
+  #page{
+    height: 900px;
+  }
+@media(max-width: 1200px){
+  #page{
+    height: 800px;
+  }
+}
+}
+@media(max-width:1000px){
+  #page{
+    height: 600px;
+  }
+  #page img{
+    margin: 0px 5%;
+  }
+  #image{
+    height: 80%;
+    width: auto;
+  }
+  #name{
+    font-size: 70px;
+    top: 36%;
+    left: 50%;
+  }
+  #leafCon{
+    left: 10%;
+  }
+  #leaf{
+    top: 30px;
+    left: 0%;
+    width: 60%;
+  }
+
+  #contact{
+    height: 700px;
+  }
+}

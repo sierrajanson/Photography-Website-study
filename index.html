@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+
+<!-- portfolio websites:
+have "call to action": email easy and accessible to copy (
+  don't talk away from the page as well
+)
+
+when showing case examples, show them on the page, don't make the interviewer have to click away from the page
+
+ui/ux design, negative space says a lot 
+
+make title/message biggest, not name (important thing is what you do,
+not who you are to people hiring you) 
+
+don't play sound immediately when you load the page, or at all 
+
+tell me about your project (for contact) -->
+
+
+<!-- 
+LEARNED FROM PROJ:
+1. tilting name title looks really cool
+2. unsplash photos are great, and then you can upload it to canva to get a nice color pallete for web;
+and THEN you can upload it to image color picker to get more colors in hex if necessary
+3. writing out what i want a website to look like, and marking it with the tags
+that i'll use for html/css is really helpful
+
+IMPROVE:
+1. spacing (flex/grid knowledge)
+2. dynamic website (i find myself hardcoding or just changing things to see if they will align in the 
+way i want them to)
+3. organization
+
+IDEAS:
+1. learn how to take own photos 
+2. learn how to edit stock photos to fit a theme for a website (and other design things)
+-->
+
+
+<!-- 
+IMMEDIATE:
+1. put copyright info in footer & put footers on every page :)
+2. put placeholders input and disclaimer that it's just for demonstrative purposes
+3. form validation (put something in the fields if you want to submit)
+4. form submitted successfully text below button!
+
+EXTRA:
+1. some indiciation to show what page is on
+2. slideshow when click on images 
+
+NICE:
+1. media queries to make website accessible for mobile too
+2. figure out button arranging and image grid arranging (should do grid for next web proj) (or put in about)
+3. organize CSS
+4. fix color for grid (not the right shade of grey)
+5. add image shadow(s)
+
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="container">
+      <!-- either add a box shadow or a black rectangle to the left of image, too awkward looking by itself -->
+      <img id="image" src="images/cropped.jfif">
+      <
+      <pre id="name"> Demo
+      Person </pre>
+      <p id="job"> Photographer </p>
+    </div>
+    <div id="contact">
+      <h1 id="me"> Get in touch. </h1>
+      <p> Available for hire.</p>
+      <!-- input and submit area, will do later -->
+      <div id="input">
+        <label> Email: </label>
+        <input type="email"> <br><br>
+        <label> Message: </label>
+        <input id="msg" type="text"><br><br>
+        <input id="btn" type="submit" value="SUBMIT">
+      </div>
+    </div>
+    <footer class="foot" id="foot3">
+      <a href="fakeSocials.html">Copyright © 2023</a>
+      <a href="fakeSocials.html">Instagram</a>
+      <a href="fakeSocials.html">Twitter</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
